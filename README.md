@@ -1,42 +1,45 @@
 # Prajwal Ganugula — Portfolio
 
-A single-page portfolio that highlights my AI engineering, deep learning, and MLOps work. Built with semantic HTML, custom CSS, and a sprinkle of vanilla JavaScript so it is lightweight and easy to host on GitHub Pages.
+A single-page portfolio that showcases both of my career tracks: multimodal AI systems and platform/infrastructure engineering. Built with semantic HTML, custom CSS, and lightweight JavaScript so it stays fast on GitHub Pages.
 
 ## Structure
 
-- `index.html` — base layout, content sections, internal navigation
-- `styles.css` — design system, responsive layout, and component styles
-- `script.js` — mobile navigation toggle and dynamic copyright year
-- `assets/` — place images, PDFs (e.g., `assets/prajwal-ganugula-resume.pdf`), or other static files here
+- `index.html` — layout, content, and data-track toggles for AI vs. Platform views
+- `styles.css` — design system, responsive layout, cards, timelines, and gallery styling
+- `script.js` — mobile navigation toggle, track switching logic, and footer year
+- `assets/img/` — research imagery (e.g., MOSAIC figures extracted from ICCV paper)
+- `assets/docs/` — drop-in location for downloadable resume PDFs (add manually)
 
 ## Local Preview
 
-No build step required. Open `index.html` directly in a browser or use a static server such as:
+No build step required. Open `index.html` in a browser or serve the folder:
 
 ```bash
 python -m http.server 8000
 ```
 
-Then visit `http://localhost:8000` and navigate to `/index.html`.
+Visit `http://localhost:8000/index.html` to browse the site.
 
 ## Deploying to GitHub Pages
 
-1. Create a new GitHub repository named `<username>.github.io`.
-2. Copy the contents of this folder into the repository and push the `main` branch.
-3. Wait 1–2 minutes, then visit `https://<username>.github.io` to see the live site.
-4. Any time you push changes to `main`, Pages will redeploy automatically.
+1. Push the content to the `<username>.github.io` repository’s `main` branch.
+2. Ensure Pages is configured for the `main` branch (Settings → Pages).
+3. Wait a minute for deployment, then visit `https://<username>.github.io`.
+4. Future pushes to `main` redeploy automatically.
 
 ## Customization Checklist
 
-- Update the GitHub link inside the **Contact** section (`index.html:260`) with your handle.
-- Replace the resume button link in **Contact** once the PDF is added to `assets/`.
-- Swap in a personal logo or headshot by adding an image to `assets/img/` and referencing it in the hero section if desired.
-- Tailor colors and typography by tweaking the CSS variables at the top of `styles.css`.
+- Replace the disabled resume buttons in **Resumes & Artifacts** once PDFs are added to `assets/docs/`.
+- Update hero metrics or add new focus tracks to reflect future roles.
+- Swap in a headshot or custom illustration by adding an image to `assets/img/` and referencing it from the hero.
+- Adjust colors/typography via the CSS variables defined at the top of `styles.css`.
+- Extend the research gallery with additional artifacts (drop images into `assets/img/`).
 
 ## Next Ideas
 
-- Add blog posts or presentation decks as new sections.
-- Introduce a dark mode toggle by extending the CSS custom properties.
-- Hook up simple analytics (e.g., Plausible) to understand traffic sources.
+- Add case-study pages per project (could be separate HTML files or Markdown-to-HTML via a static generator).
+- Layer in a “Latest updates” or blog section.
+- Provide a dark mode toggle by extending the CSS custom properties.
+- Instrument privacy-friendly analytics such as Plausible or Umami.
 
 Feel free to iterate and grow the site as your portfolio evolves.

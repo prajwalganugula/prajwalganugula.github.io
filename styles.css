@@ -138,6 +138,27 @@ ul {
   color: var(--color-accent);
 }
 
+.hero__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
+}
+
+.hero__chips span {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  background: var(--color-surface);
+  border: 1px solid rgba(79, 70, 229, 0.2);
+  color: var(--color-accent);
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.3em;
@@ -243,6 +264,62 @@ ul {
 
 .section__heading p {
   margin: 0;
+  color: var(--color-muted);
+}
+
+.tracks__controls {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 2rem;
+}
+
+.track-btn {
+  border: 1px solid rgba(79, 70, 229, 0.4);
+  background: rgba(79, 70, 229, 0.08);
+  color: var(--color-accent);
+  font-weight: 600;
+  border-radius: 999px;
+  padding: 0.6rem 1.6rem;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.track-btn.is-active,
+.track-btn:focus-visible {
+  background: var(--color-accent);
+  color: #ffffff;
+  box-shadow: var(--shadow-sm);
+}
+
+.track-btn:focus-visible {
+  outline: none;
+}
+
+.tracks__cards {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.tracks__card {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 0.9rem;
+}
+
+.tracks__card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.tracks__card ul {
+  list-style: disc;
+  padding-left: 1.2rem;
   color: var(--color-muted);
 }
 
@@ -354,6 +431,72 @@ ul {
   color: var(--color-muted);
 }
 
+.research {
+  background: radial-gradient(circle at top left, rgba(79, 70, 229, 0.08), transparent 55%);
+}
+
+.research__highlight {
+  display: grid;
+  gap: clamp(1.5rem, 4vw, 2.5rem);
+  grid-template-columns: minmax(0, 340px) minmax(0, 1fr);
+  align-items: start;
+}
+
+.research__summary {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: 1rem;
+}
+
+.research__summary h3 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.research__summary ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.research__summary a {
+  color: var(--color-accent);
+  font-weight: 600;
+}
+
+.research__gallery {
+  display: grid;
+  gap: 1.2rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.research__gallery figure {
+  margin: 0;
+  background: var(--color-surface);
+  border-radius: 1rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: grid;
+}
+
+.research__gallery img {
+  width: 100%;
+  display: block;
+}
+
+.research__gallery figcaption {
+  padding: 0.8rem 1rem;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
 .publications {
   display: grid;
   gap: 1.5rem;
@@ -444,6 +587,41 @@ ul {
   border: 1px solid rgba(79, 70, 229, 0.15);
 }
 
+.downloads__grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.downloads__card {
+  background: var(--color-surface);
+  border-radius: 1.2rem;
+  border: 1px solid var(--color-border);
+  box-shadow: var(--shadow-sm);
+  padding: 2rem;
+  display: grid;
+  gap: 0.8rem;
+}
+
+.downloads__card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+}
+
+.downloads__hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--color-muted);
+}
+
+.downloads__hint code {
+  background: var(--color-surface-alt);
+  padding: 0.1rem 0.4rem;
+  border-radius: 0.4rem;
+  font-family: "Space Grotesk", monospace;
+  font-size: 0.8rem;
+}
+
 .contact {
   background: linear-gradient(135deg, rgba(79, 70, 229, 0.08), rgba(14, 116, 144, 0.08));
 }
@@ -503,6 +681,19 @@ ul {
   font-weight: 600;
 }
 
+.is-hidden {
+  display: none;
+}
+
+.is-disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+code {
+  font-family: "Space Grotesk", monospace;
+}
+
 @media (max-width: 900px) {
   .hero__content {
     grid-template-columns: 1fr;
@@ -510,6 +701,10 @@ ul {
 
   .hero__highlight {
     order: -1;
+  }
+
+  .research__highlight {
+    grid-template-columns: 1fr;
   }
 }
 

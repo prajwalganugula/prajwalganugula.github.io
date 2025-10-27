@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prajwal Ganugula | Portfolio</title>
+    <title>Prajwal Ganugula | AI Systems & Platform Engineer</title>
     <meta
       name="description"
-      content="Portfolio of Prajwal Ganugula — Software Engineer specializing in deep learning, multimodal AI, and MLOps."
+      content="Portfolio of Prajwal Ganugula — ASU graduate student and engineer building multimodal AI systems and resilient infrastructure platforms."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -26,58 +26,63 @@
           <span></span>
         </button>
         <ul class="nav__links">
-          <li><a href="#about">About</a></li>
+          <li><a href="#focus">Focus</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#publications">Publications</a></li>
+          <li><a href="#research">Research</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#downloads">Resumes</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="hero__content">
         <div class="hero__text">
-          <p class="eyebrow">Software &amp; Research Engineer</p>
+          <div class="hero__chips">
+            <span>Multimodal AI</span>
+            <span>Platform Engineering</span>
+            <span>MLOps</span>
+          </div>
           <h1>
-            Hi, I’m <span>Prajwal Ganugula</span>. I build intelligent,
-            production-ready multimodal systems.
+            I’m <span>Prajwal Ganugula</span>. I turn research-grade models into reliable
+            products and the infrastructure that powers them.
           </h1>
           <p class="hero__summary">
-            Graduate student at Arizona State University and former
-            deep-learning engineer at OPLUS. I specialize in designing
-            efficient LLM and vision pipelines that scale from research to
-            real-world deployment.
+            Graduate student at Arizona State University, previously building LLM and
+            diffusion systems at OPLUS and modernizing automation infrastructure at
+            scale. My work blends multimodal deep learning, low-latency deployment, and
+            cloud-first platform design.
           </p>
           <div class="hero__actions">
-            <a class="btn" href="#projects">View Projects</a>
-            <a class="btn btn--ghost" href="#contact">Let’s Collaborate</a>
+            <a class="btn" href="#projects">See Selected Work</a>
+            <a class="btn btn--ghost" href="#downloads">View Resumes</a>
           </div>
           <ul class="hero__meta">
+            <li><span>Tempe, Arizona</span></li>
+            <li><a href="tel:+14809423759">+1 480 942 3759</a></li>
+            <li><a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a></li>
             <li>
-              <span>+1 480 942 3759</span>
-            </li>
-            <li>
-              <a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a>
-            </li>
-            <li>
-              <a href="https://linkedin.com/in/prajwal-ganugula"
+              <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer"
                 >linkedin.com/in/prajwal-ganugula</a
               >
             </li>
-            <li>Tempe, Arizona</li>
           </ul>
         </div>
         <div class="hero__highlight">
           <div class="hero__stat">
-            <span class="hero__stat-number">8x</span>
-            <span class="hero__stat-label">diffusion speed-ups</span>
+            <span class="hero__stat-number">8×</span>
+            <span class="hero__stat-label">diffusion speed-up with KD</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">70%</span>
+            <span class="hero__stat-label">manual toil cut via IaC &amp; CI/CD</span>
           </div>
           <div class="hero__stat">
             <span class="hero__stat-number">3rd</span>
-            <span class="hero__stat-label">Global SES Code Jam 2022</span>
+            <span class="hero__stat-label">Global SES Code Jam · OPPO HQ</span>
           </div>
           <div class="hero__stat">
-            <span class="hero__stat-number">2×</span>
+            <span class="hero__stat-number">2</span>
             <span class="hero__stat-label">peer-reviewed publications</span>
           </div>
         </div>
@@ -85,53 +90,59 @@
     </header>
 
     <main>
-      <section id="about" class="section about">
+      <section id="focus" class="section section--alt tracks">
         <div class="section__heading">
-          <h2>About</h2>
+          <h2>Focus Areas</h2>
           <p>
-            I bridge cutting-edge research and robust engineering to create AI
-            products that ship. My focus areas are multimodal learning, efficient
-            model deployment, and human-centric NLP experiences.
+            Toggle between the lenses I bring to teams. The controls also shape the
+            experience and project sections below.
           </p>
         </div>
-        <div class="about__grid">
-          <article class="about__card">
-            <h3>What I Do</h3>
+        <div class="tracks__controls" role="tablist" aria-label="Career focus selector">
+          <button class="track-btn is-active" data-track="ai" role="tab" aria-selected="true">
+            AI Systems &amp; Research
+          </button>
+          <button class="track-btn" data-track="platform" role="tab" aria-selected="false">
+            Platform &amp; Infrastructure
+          </button>
+        </div>
+        <div class="tracks__cards">
+          <article class="tracks__card">
+            <h3>AI Systems &amp; Research</h3>
             <p>
-              Build and optimize end-to-end LLM, diffusion, and retrieval
-              systems—covering dataset strategy, fine-tuning, benchmarking, and
-              deployment with GPU-aware automation.
+              Multimodal LLMs, diffusion distillation, RAG pipelines, and evaluation
+              workflows anchored in reproducible ML science.
             </p>
+            <ul>
+              <li>QLoRA, PEFT, and instruction alignment for production models</li>
+              <li>Efficient benchmarking with PyTorch, ONNX, TensorRT, DeepSpeed</li>
+              <li>Dataset engines and data-centric evaluation for grounded outputs</li>
+            </ul>
           </article>
-          <article class="about__card">
-            <h3>How I Work</h3>
+          <article class="tracks__card">
+            <h3>Platform &amp; Infrastructure</h3>
             <p>
-              Lean on strong MLOps practices, reproducible research workflows,
-              and close collaboration with cross-functional teams to move from
-              prototype to production quickly.
+              Automating reliability across CI/CD, observability, and IaC so ML and
+              product teams can scale with confidence.
             </p>
-          </article>
-          <article class="about__card">
-            <h3>Currently</h3>
-            <p>
-              Pursuing an MS in Computer Science at ASU while leading research
-              on structured image captioning and instruction-tuned multimodal
-              models.
-            </p>
+            <ul>
+              <li>Terraform, AWS, and container-native deployment flows</li>
+              <li>Resilient job schedulers, caching layers, and telemetry pipelines</li>
+              <li>Incident tooling, chaos testing, and feedback loops to shorten MTTR</li>
+            </ul>
           </article>
         </div>
       </section>
 
-      <section id="experience" class="section section--alt">
+      <section id="experience" class="section">
         <div class="section__heading">
           <h2>Experience</h2>
           <p>
-            Four years delivering large-scale applied AI—from distilling Stable
-            Diffusion to launching multilingual chatbots and CI-driven ML
-            platforms.
+            4+ years shipping applied research and infrastructure in production environments.
+            Switch the focus to see the stories most relevant to you.
           </p>
         </div>
-        <div class="timeline">
+        <div class="timeline" data-track-content="ai">
           <article class="timeline__item">
             <header>
               <h3>Software Engineer · Deep Learning Research</h3>
@@ -140,70 +151,120 @@
             </header>
             <ul>
               <li>
-                Designed lightweight LLM chatbot pipelines for mobile, cutting
-                inference latency while adding multilingual understanding.
+                Designed lightweight LLM chatbots for mobile, cutting inference latency while
+                adding multilingual understanding for user insights.
               </li>
               <li>
-                Distilled Stable Diffusion with step-aware training to shrink
-                UNet by 50% and realize 8× faster synthesis on-device.
+                Distilled Stable Diffusion with step-aware training, shrinking UNet by 50% and
+                delivering 8× faster synthesis on-device.
               </li>
               <li>
-                Automated training and benchmarking stacks with PyTorch, ONNX,
-                TensorRT, Docker, and Bash for repeatable performance gains.
+                Automated training and benchmarking with PyTorch, ONNX, TensorRT, Docker, and
+                Bash for repeatable performance wins.
               </li>
               <li>
-                Led SES Code Jam team to global 3rd place; recognized as Best
-                On-the-Job Trainer for mentorship and delivery excellence.
+                Led SES Code Jam team to global 3rd place; honored as Best On-the-Job Trainer
+                for mentorship and delivery.
               </li>
             </ul>
           </article>
           <article class="timeline__item">
             <header>
-              <h3>Machine Learning Engineer · Intern</h3>
+              <h3>Machine Learning Engineer · Internship</h3>
               <span>Samsung R&amp;D Institute · Delhi, India</span>
               <time>Jun 2021 – Jul 2021</time>
             </header>
             <ul>
               <li>
-                Benchmarked transformer-based NER and text classification models
-                with MLflow and DVC-backed CI/CD experimentation.
+                Benchmarked BERT and RoBERTa pipelines for NER and classification with MLflow
+                tracking and DVC-powered CI integrations.
               </li>
               <li>
-                Shipped a MobileBERT sentiment analysis service with FastAPI,
-                Docker, and automated retraining via Azure DevOps schedules.
+                Shipped a MobileBERT sentiment service on FastAPI with Dockerized deployment
+                and automated retraining via Azure DevOps.
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="timeline is-hidden" data-track-content="platform">
+          <article class="timeline__item">
+            <header>
+              <h3>Software Engineer · Infrastructure Team</h3>
+              <span>ASU Decision Theater Network · Tempe, AZ</span>
+              <time>Dec 2024 – Present</time>
+            </header>
+            <ul>
+              <li>
+                Engineered orchestration scripts and observability tooling that streamline ETL
+                analytics across AWS and on-prem clusters.
+              </li>
+              <li>
+                Built RESTful services with FastAPI and PostgreSQL for internal dashboards,
+                improving data access latency by 30%.
+              </li>
+              <li>
+                Provisioned IaC via Terraform across EC2, RDS, and S3 while enforcing security
+                guardrails and cost visibility.
+              </li>
+              <li>
+                Reduced manual build effort by 70% through GitHub Actions and Docker-based
+                multi-environment deployments.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <header>
+              <h3>Software Engineer · Automation &amp; Infrastructure</h3>
+              <span>OPLUS (OPPO · OnePlus) R&amp;D · Hyderabad, India</span>
+              <time>Jun 2022 – Aug 2024</time>
+            </header>
+            <ul>
+              <li>
+                Automated Android validation suite setup via Poco UI Automator, reducing
+                pre-check effort from 20 engineers to 2 with 87% fewer test failures.
+              </li>
+              <li>
+                Developed regression analytics aggregating CI logs and Git metadata to surface
+                flaky tests and accelerate firmware fixes.
+              </li>
+              <li>
+                Built REST-based bug traceability workflows integrating GitLab and Jira to cut
+                reproduction cycles by 60%.
+              </li>
+              <li>
+                Delivered self-service tooling for image flashing and centralized log ingestion
+                into Grafana dashboards.
               </li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="projects" class="section">
+      <section id="projects" class="section section--alt">
         <div class="section__heading">
-          <h2>Highlighted Projects</h2>
+          <h2>Selected Projects</h2>
           <p>
-            Selected work that pairs research-grade models with pragmatic
-            deployment and measurable impact.
+            Strategic projects that reflect each focus area. Use the toggle above to switch
+            context.
           </p>
         </div>
-        <div class="cards">
+
+        <div class="cards" data-track-content="ai">
           <article class="card">
             <header>
               <h3>Structured Image Captioning using Multimodal LLMs</h3>
               <span>Mar 2024 – Present</span>
             </header>
             <p>
-              Architected a BLIP-2 + ViT-G + FLAN-T5 stack fine-tuned with
-              QLoRA and DPO-RLHF to produce schema-aware captions for enterprise
-              workflows.
+              Architected BLIP-2 + ViT-G fused with FLAN-T5 via QLoRA, then aligned with
+              DPO-RLHF to deliver schema-aware captions for enterprise pipelines.
             </p>
             <ul>
+              <li>Generated templated, structured datasets for controllable captioning.</li>
               <li>
-                Curated templated datasets with structured annotations for
-                high-precision generation.
-              </li>
-              <li>
-                Operated scalable PEFT training with DeepSpeed ZeRO-3 and FSDP
-                to minimize GPU footprint.
+                Scaled PEFT training with DeepSpeed ZeRO-3 and FSDP to minimize GPU memory and
+                cost.
               </li>
             </ul>
           </article>
@@ -213,53 +274,147 @@
               <span>Nov 2023 – Feb 2024</span>
             </header>
             <p>
-              Delivered a production-ready RAG system combining FAISS and
-              ColBERT with a quantized BGE reranker to serve precise answers at
-              scale.
+              Built a full-stack RAG platform combining FAISS + ColBERT retrieval with a
+              quantized BGE reranker to deliver precise answers on tight SLAs.
             </p>
             <ul>
               <li>
-                Deployed ONNX-accelerated reranker via FastAPI with automated
-                retraining and testing on GitHub Actions.
+                Deployed ONNX-accelerated reranker through FastAPI, orchestrated by Docker and
+                GitHub Actions.
+              </li>
+              <li>Improved answer precision by 22% while maintaining latency budgets.</li>
+            </ul>
+          </article>
+          <article class="card">
+            <header>
+              <h3>MOSAIC: Text-Guided Stylization Control</h3>
+              <span>ICCV Workshops 2023</span>
+            </header>
+            <p>
+              First method to perform text-driven object-wise stylization using CLIP-guided
+              segmentation and diffusion, enabling controllable artistry.
+            </p>
+            <ul>
+              <li>Co-authored peer-reviewed publication accepted at ICCV 2023 Workshops.</li>
+              <li>
+                Demonstrated qualitative and quantitative gains in targeted stylization control.
+              </li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="cards is-hidden" data-track-content="platform">
+          <article class="card">
+            <header>
+              <h3>Distributed Cache-Coordinated CI Scheduler</h3>
+              <span>Oct 2024 – Dec 2024</span>
+            </header>
+            <p>
+              Designed a Redis-backed scheduler to deduplicate builds, optimize runner
+              utilization, and coordinate Docker layer caching across fleets.
+            </p>
+            <ul>
+              <li>Improved pipeline throughput by 42% through cache fingerprinting.</li>
+              <li>
+                Integrated pub/sub signals with GitHub Actions for coherent cache invalidation
+                across ephemeral agents.
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <header>
+              <h3>Network Fault Injection &amp; Auto-Recovery Simulator</h3>
+              <span>Aug 2023 – Sep 2023</span>
+            </header>
+            <p>
+              Created a programmable chaos framework leveraging iptables, `tc`, and shell
+              automation to stress-test microservice resilience.
+            </p>
+            <ul>
+              <li>
+                Mapped service tolerance thresholds with Consul discovery and generated recovery
+                playbooks.
               </li>
               <li>
-                Achieved a 22% lift in answer precision under strict latency
-                requirements.
+                Validated auto-healing paths across Docker networks to harden load balancer and
+                service mesh failovers.
               </li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="publications" class="section section--alt">
+      <section id="research" class="section research">
         <div class="section__heading">
-          <h2>Publications</h2>
+          <h2>Research &amp; Publications</h2>
           <p>
-            Peer-reviewed research across style transfer, multimodal
-            understanding, and agricultural forecasting.
+            Blending computer vision research with practical deployment.
+            Explore select figures from MOSAIC and other published work.
           </p>
+        </div>
+        <div class="research__highlight">
+          <div class="research__summary">
+            <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
+            <p>
+              Proceedings of ICCV Workshops, 2023. Introduced the first text-guided,
+              object-wise stylization method leveraging CLIP, segmentation transformers, and
+              diffusion for granular artistic control.
+            </p>
+            <ul>
+              <li>
+                <a
+                  href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Ganugula_MOSAIC_Multi-Object_Segmented_Arbitrary_Stylization_Using_CLIP_ICCVW_2023_paper.pdf"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Read the paper ↗</a
+                >
+              </li>
+              <li>
+                <a href="https://arxiv.org/abs/2309.13716" target="_blank" rel="noreferrer"
+                  >arXiv preprint ↗</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="research__gallery">
+            <figure>
+              <img
+                src="assets/img/mosaic-page-1.png"
+                alt="MOSAIC paper cover showing stylization overview."
+                loading="lazy"
+              />
+              <figcaption>Overview of MOSAIC stylization pipeline.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/img/mosaic-page-3.png"
+                alt="Sample stylized images with segmented objects from MOSAIC paper."
+                loading="lazy"
+              />
+              <figcaption>Per-object style control outputs driven by text prompts.</figcaption>
+            </figure>
+            <figure>
+              <img
+                src="assets/img/mosaic-page-6.png"
+                alt="Quantitative and qualitative comparisons from MOSAIC paper."
+                loading="lazy"
+              />
+              <figcaption>Comparative results vs. diffusion-based baselines.</figcaption>
+            </figure>
+          </div>
         </div>
         <div class="publications">
           <article>
-            <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
-            <p>
-              Proceedings of ICCV 2023. Advanced CLIP-guided stylization by
-              segmenting objects for targeted aesthetic transfer.<br />
-              <span class="pub-authors">Prajwal Ganugula et al.</span>
-            </p>
-          </article>
-          <article>
             <h3>Application for Produced Crop Price Forecasting Through Deep Learning</h3>
             <p>
-              IRJMETS, Nov 2023. Built deep learning pipelines to predict crop
-              pricing trends and empower data-informed agriculture.<br />
-              <span class="pub-authors">Prajwal Ganugula et al.</span>
+              IRJMETS, Nov 2023. Built deep learning pipelines to predict crop pricing trends
+              and empower data-informed agriculture.
             </p>
           </article>
         </div>
       </section>
 
-      <section id="education" class="section">
+      <section id="education" class="section section--alt">
         <div class="section__heading">
           <h2>Education</h2>
         </div>
@@ -277,72 +432,108 @@
         </div>
       </section>
 
-      <section id="skills" class="section section--alt">
+      <section id="skills" class="section">
         <div class="section__heading">
-          <h2>Technical Skills</h2>
+          <h2>Technical Stack</h2>
           <p>
-            A snapshot of the languages, frameworks, and tooling I rely on to
-            deliver reliable AI systems.
+            Tools I rely on to bridge the gap between experimentation and resilient
+            deployment.
           </p>
         </div>
         <div class="skills">
           <div class="skill-group">
-            <h3>Programming</h3>
+            <h3>Languages</h3>
             <ul>
               <li>Python</li>
-              <li>SQL</li>
               <li>C++</li>
+              <li>SQL</li>
               <li>Bash</li>
+              <li>JavaScript</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Deep Learning</h3>
+            <h3>AI &amp; Data</h3>
             <ul>
               <li>PyTorch</li>
               <li>TensorFlow</li>
               <li>Diffusers</li>
-              <li>ONNX</li>
-              <li>TensorRT</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>DeepSpeed</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>NLP &amp; LLMs</h3>
+            <h3>NLP &amp; LLM Ops</h3>
             <ul>
               <li>Instruction tuning</li>
               <li>QLoRA</li>
               <li>RAG</li>
               <li>Prompt engineering</li>
-              <li>Semantic similarity</li>
+              <li>Semantic evaluation</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>MLOps &amp; DevOps</h3>
+            <h3>Platforms &amp; DevOps</h3>
             <ul>
               <li>Docker</li>
+              <li>Terraform</li>
+              <li>GitHub Actions</li>
+              <li>TensorRT</li>
+              <li>ONNX</li>
               <li>FastAPI</li>
-              <li>LangChain</li>
-              <li>LangGraph</li>
-              <li>Azure</li>
               <li>AWS</li>
+              <li>Azure</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Data &amp; Distributed</h3>
+            <h3>Data Systems</h3>
             <ul>
               <li>Apache Spark</li>
               <li>Hadoop</li>
+              <li>PostgreSQL</li>
               <li>Redshift</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Soft Skills</h3>
+            <h3>Collaboration</h3>
             <ul>
               <li>Technical communication</li>
               <li>Leadership</li>
-              <li>Team collaboration</li>
-              <li>Agile development</li>
+              <li>Agile delivery</li>
+              <li>Mentorship</li>
             </ul>
           </div>
+        </div>
+      </section>
+
+      <section id="downloads" class="section section--alt downloads">
+        <div class="section__heading">
+          <h2>Resumes &amp; Artifacts</h2>
+          <p>Pick the version that aligns with the roles you’re evaluating.</p>
+        </div>
+        <div class="downloads__grid">
+          <article class="downloads__card">
+            <h3>AI Systems &amp; Research Resume</h3>
+            <p>Highlights multimodal LLM, diffusion, and R&amp;D experience.</p>
+            <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
+              Download PDF (add file)
+            </a>
+            <p class="downloads__hint">
+              Place the file at <code>assets/docs/prajwal-ganugula-ai-resume.pdf</code> and
+              update the link.
+            </p>
+          </article>
+          <article class="downloads__card">
+            <h3>Platform &amp; Infrastructure Resume</h3>
+            <p>Focuses on DevOps, automation, and reliability engineering projects.</p>
+            <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
+              Download PDF (add file)
+            </a>
+            <p class="downloads__hint">
+              Place the file at <code>assets/docs/prajwal-ganugula-platform-resume.pdf</code>
+              and update the link.
+            </p>
+          </article>
         </div>
       </section>
 
@@ -350,27 +541,28 @@
         <div class="section__heading">
           <h2>Let’s Build Something</h2>
           <p>
-            I’m open to collaboration on multimodal AI, efficient LLM
-            deployment, and ML platform engineering. Drop a note and let’s talk.
+            Open to internships, research collaborations, and platform engineering roles that
+            blend ML with large-scale systems.
           </p>
         </div>
         <div class="contact__grid">
           <div>
-            <a class="contact__link" href="mailto:pganugul@asu.edu"
-              >pganugul@asu.edu</a
-            >
-            <a class="contact__link" href="https://linkedin.com/in/prajwal-ganugula"
+            <a class="contact__link" href="mailto:pganugul@asu.edu">pganugul@asu.edu</a>
+            <a class="contact__link" href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer"
               >LinkedIn</a
             >
-            <a class="contact__link" href="https://github.com/your-github-handle"
+            <a class="contact__link" href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer"
               >GitHub</a
             >
           </div>
           <div class="contact__cta">
-            <p>Add your resume PDF in the repository and link it here:</p>
-            <a class="btn btn--ghost" href="#"
-              >Download Resume (coming soon)</a
-            >
+            <p>
+              Prefer a structured intro? Send a short brief with team goals and I’ll reply
+              with tailored case studies.
+            </p>
+            <a class="btn btn--ghost" href="mailto:pganugul@asu.edu?subject=Let%E2%80%99s%20collaborate">
+              Start the conversation
+            </a>
           </div>
         </div>
       </section>
