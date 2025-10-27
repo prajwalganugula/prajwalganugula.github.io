@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prajwal Ganugula | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio of Prajwal Ganugula — Software Engineer specializing in deep learning, multimodal AI, and MLOps."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero" id="top">
+      <nav class="nav">
+        <a class="nav__logo" href="#top">PG</a>
+        <button class="nav__toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav__links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#publications">Publications</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero__content">
+        <div class="hero__text">
+          <p class="eyebrow">Software &amp; Research Engineer</p>
+          <h1>
+            Hi, I’m <span>Prajwal Ganugula</span>. I build intelligent,
+            production-ready multimodal systems.
+          </h1>
+          <p class="hero__summary">
+            Graduate student at Arizona State University and former
+            deep-learning engineer at OPLUS. I specialize in designing
+            efficient LLM and vision pipelines that scale from research to
+            real-world deployment.
+          </p>
+          <div class="hero__actions">
+            <a class="btn" href="#projects">View Projects</a>
+            <a class="btn btn--ghost" href="#contact">Let’s Collaborate</a>
+          </div>
+          <ul class="hero__meta">
+            <li>
+              <span>+1 480 942 3759</span>
+            </li>
+            <li>
+              <a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/prajwal-ganugula"
+                >linkedin.com/in/prajwal-ganugula</a
+              >
+            </li>
+            <li>Tempe, Arizona</li>
+          </ul>
+        </div>
+        <div class="hero__highlight">
+          <div class="hero__stat">
+            <span class="hero__stat-number">8x</span>
+            <span class="hero__stat-label">diffusion speed-ups</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">3rd</span>
+            <span class="hero__stat-label">Global SES Code Jam 2022</span>
+          </div>
+          <div class="hero__stat">
+            <span class="hero__stat-number">2×</span>
+            <span class="hero__stat-label">peer-reviewed publications</span>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section about">
+        <div class="section__heading">
+          <h2>About</h2>
+          <p>
+            I bridge cutting-edge research and robust engineering to create AI
+            products that ship. My focus areas are multimodal learning, efficient
+            model deployment, and human-centric NLP experiences.
+          </p>
+        </div>
+        <div class="about__grid">
+          <article class="about__card">
+            <h3>What I Do</h3>
+            <p>
+              Build and optimize end-to-end LLM, diffusion, and retrieval
+              systems—covering dataset strategy, fine-tuning, benchmarking, and
+              deployment with GPU-aware automation.
+            </p>
+          </article>
+          <article class="about__card">
+            <h3>How I Work</h3>
+            <p>
+              Lean on strong MLOps practices, reproducible research workflows,
+              and close collaboration with cross-functional teams to move from
+              prototype to production quickly.
+            </p>
+          </article>
+          <article class="about__card">
+            <h3>Currently</h3>
+            <p>
+              Pursuing an MS in Computer Science at ASU while leading research
+              on structured image captioning and instruction-tuned multimodal
+              models.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--alt">
+        <div class="section__heading">
+          <h2>Experience</h2>
+          <p>
+            Four years delivering large-scale applied AI—from distilling Stable
+            Diffusion to launching multilingual chatbots and CI-driven ML
+            platforms.
+          </p>
+        </div>
+        <div class="timeline">
+          <article class="timeline__item">
+            <header>
+              <h3>Software Engineer · Deep Learning Research</h3>
+              <span>OPLUS (OPPO · OnePlus) · Hyderabad, India</span>
+              <time>Jun 2022 – Aug 2024</time>
+            </header>
+            <ul>
+              <li>
+                Designed lightweight LLM chatbot pipelines for mobile, cutting
+                inference latency while adding multilingual understanding.
+              </li>
+              <li>
+                Distilled Stable Diffusion with step-aware training to shrink
+                UNet by 50% and realize 8× faster synthesis on-device.
+              </li>
+              <li>
+                Automated training and benchmarking stacks with PyTorch, ONNX,
+                TensorRT, Docker, and Bash for repeatable performance gains.
+              </li>
+              <li>
+                Led SES Code Jam team to global 3rd place; recognized as Best
+                On-the-Job Trainer for mentorship and delivery excellence.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <header>
+              <h3>Machine Learning Engineer · Intern</h3>
+              <span>Samsung R&amp;D Institute · Delhi, India</span>
+              <time>Jun 2021 – Jul 2021</time>
+            </header>
+            <ul>
+              <li>
+                Benchmarked transformer-based NER and text classification models
+                with MLflow and DVC-backed CI/CD experimentation.
+              </li>
+              <li>
+                Shipped a MobileBERT sentiment analysis service with FastAPI,
+                Docker, and automated retraining via Azure DevOps schedules.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="section__heading">
+          <h2>Highlighted Projects</h2>
+          <p>
+            Selected work that pairs research-grade models with pragmatic
+            deployment and measurable impact.
+          </p>
+        </div>
+        <div class="cards">
+          <article class="card">
+            <header>
+              <h3>Structured Image Captioning using Multimodal LLMs</h3>
+              <span>Mar 2024 – Present</span>
+            </header>
+            <p>
+              Architected a BLIP-2 + ViT-G + FLAN-T5 stack fine-tuned with
+              QLoRA and DPO-RLHF to produce schema-aware captions for enterprise
+              workflows.
+            </p>
+            <ul>
+              <li>
+                Curated templated datasets with structured annotations for
+                high-precision generation.
+              </li>
+              <li>
+                Operated scalable PEFT training with DeepSpeed ZeRO-3 and FSDP
+                to minimize GPU footprint.
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <header>
+              <h3>Efficient Retrieval-Augmented Generation Pipeline</h3>
+              <span>Nov 2023 – Feb 2024</span>
+            </header>
+            <p>
+              Delivered a production-ready RAG system combining FAISS and
+              ColBERT with a quantized BGE reranker to serve precise answers at
+              scale.
+            </p>
+            <ul>
+              <li>
+                Deployed ONNX-accelerated reranker via FastAPI with automated
+                retraining and testing on GitHub Actions.
+              </li>
+              <li>
+                Achieved a 22% lift in answer precision under strict latency
+                requirements.
+              </li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="publications" class="section section--alt">
+        <div class="section__heading">
+          <h2>Publications</h2>
+          <p>
+            Peer-reviewed research across style transfer, multimodal
+            understanding, and agricultural forecasting.
+          </p>
+        </div>
+        <div class="publications">
+          <article>
+            <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
+            <p>
+              Proceedings of ICCV 2023. Advanced CLIP-guided stylization by
+              segmenting objects for targeted aesthetic transfer.<br />
+              <span class="pub-authors">Prajwal Ganugula et al.</span>
+            </p>
+          </article>
+          <article>
+            <h3>Application for Produced Crop Price Forecasting Through Deep Learning</h3>
+            <p>
+              IRJMETS, Nov 2023. Built deep learning pipelines to predict crop
+              pricing trends and empower data-informed agriculture.<br />
+              <span class="pub-authors">Prajwal Ganugula et al.</span>
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="education" class="section">
+        <div class="section__heading">
+          <h2>Education</h2>
+        </div>
+        <div class="education">
+          <article>
+            <h3>Arizona State University</h3>
+            <p>Master of Science in Computer Science</p>
+            <span>Aug 2024 – May 2026 · Tempe, AZ</span>
+          </article>
+          <article>
+            <h3>Indian Institute of Technology, Hyderabad</h3>
+            <p>B.Tech in Computer Science and Engineering</p>
+            <span>Jul 2018 – May 2022 · Hyderabad, IN</span>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--alt">
+        <div class="section__heading">
+          <h2>Technical Skills</h2>
+          <p>
+            A snapshot of the languages, frameworks, and tooling I rely on to
+            deliver reliable AI systems.
+          </p>
+        </div>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <ul>
+              <li>Python</li>
+              <li>SQL</li>
+              <li>C++</li>
+              <li>Bash</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Deep Learning</h3>
+            <ul>
+              <li>PyTorch</li>
+              <li>TensorFlow</li>
+              <li>Diffusers</li>
+              <li>ONNX</li>
+              <li>TensorRT</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>NLP &amp; LLMs</h3>
+            <ul>
+              <li>Instruction tuning</li>
+              <li>QLoRA</li>
+              <li>RAG</li>
+              <li>Prompt engineering</li>
+              <li>Semantic similarity</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>MLOps &amp; DevOps</h3>
+            <ul>
+              <li>Docker</li>
+              <li>FastAPI</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>Azure</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Data &amp; Distributed</h3>
+            <ul>
+              <li>Apache Spark</li>
+              <li>Hadoop</li>
+              <li>Redshift</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3>Soft Skills</h3>
+            <ul>
+              <li>Technical communication</li>
+              <li>Leadership</li>
+              <li>Team collaboration</li>
+              <li>Agile development</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="section__heading">
+          <h2>Let’s Build Something</h2>
+          <p>
+            I’m open to collaboration on multimodal AI, efficient LLM
+            deployment, and ML platform engineering. Drop a note and let’s talk.
+          </p>
+        </div>
+        <div class="contact__grid">
+          <div>
+            <a class="contact__link" href="mailto:pganugul@asu.edu"
+              >pganugul@asu.edu</a
+            >
+            <a class="contact__link" href="https://linkedin.com/in/prajwal-ganugula"
+              >LinkedIn</a
+            >
+            <a class="contact__link" href="https://github.com/your-github-handle"
+              >GitHub</a
+            >
+          </div>
+          <div class="contact__cta">
+            <p>Add your resume PDF in the repository and link it here:</p>
+            <a class="btn btn--ghost" href="#"
+              >Download Resume (coming soon)</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© <span id="year"></span> Prajwal Ganugula. Built with curiosity and care.</p>
+      <a class="footer__top" href="#top">Back to top ↑</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
