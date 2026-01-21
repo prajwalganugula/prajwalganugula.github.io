@@ -1,5 +1,6 @@
 :root {
   --font-body: "Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+  --font-heading: "Oswald", "Helvetica Neue", Arial, sans-serif;
   --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
   --color-bg: #ffffff;
   --color-surface: #ffffff;
@@ -19,7 +20,7 @@ body {
   margin: 0;
   font-family: var(--font-body);
   color: var(--color-text);
-  background: #f8fafc;
+  background: #ffffff;
   line-height: 1.65;
 }
 
@@ -29,9 +30,11 @@ a {
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  margin-bottom: 0.8rem;
 }
 
 .layout {
@@ -40,10 +43,10 @@ h2 {
 }
 
 .sidebar {
-  width: 260px;
+  width: 240px;
   background: var(--color-accent);
   color: #ffffff;
-  padding: 2.4rem 1.8rem;
+  padding: 2.2rem 1.6rem;
   position: fixed;
   top: 0;
   bottom: 0;
@@ -52,13 +55,16 @@ h2 {
 }
 
 .sidebar__profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
   margin-bottom: 2rem;
 }
 
 .sidebar__avatar {
-  width: 110px;
-  height: 110px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid rgba(255, 255, 255, 0.6);
@@ -115,24 +121,26 @@ h2 {
 }
 
 .content {
-  margin-left: 260px;
-  padding: 2.5rem 3.5rem 4rem;
-  width: calc(100% - 260px);
+  margin-left: 240px;
+  padding: 2.2rem 3rem 4rem;
+  width: calc(100% - 240px);
 }
 
 .section {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
+  max-width: 920px;
 }
 
 .card {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: 12px;
-  padding: 1.8rem;
-  box-shadow: var(--shadow);
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
 }
 
 .intro__name {
+  font-family: var(--font-heading);
   margin: 0 0 0.4rem;
   font-size: 2rem;
   font-weight: 700;
@@ -163,7 +171,7 @@ h2 {
   background: var(--color-accent-dark);
   color: #ffffff;
   padding: 0.6rem 1.4rem;
-  border-radius: 999px;
+  border-radius: 6px;
   font-weight: 600;
   font-size: 0.92rem;
 }
@@ -177,16 +185,16 @@ h2 {
 .tag-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.6rem;
+  gap: 0.8rem;
   font-family: var(--font-mono);
   text-transform: uppercase;
-  font-size: 0.75rem;
-  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
   color: var(--color-accent-dark);
 }
 
 .list article {
-  padding: 1.2rem 0;
+  padding: 0.9rem 0;
   border-top: 1px solid var(--color-border);
 }
 
@@ -228,7 +236,7 @@ h2 {
 
 .skills {
   display: grid;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .skills h3 {
@@ -244,14 +252,14 @@ h2 {
 .resume {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   flex-wrap: wrap;
   gap: 1rem;
 }
 
 @media (max-width: 1024px) {
   .content {
-    padding: 2.5rem 2rem 4rem;
+    padding: 2.2rem 2rem 4rem;
   }
 }
 
