@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@500&family=Libre+Baskerville:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -31,104 +31,114 @@
           <li><a href="#projects">Projects</a></li>
           <li><a href="#research">Research</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#downloads">Resumes</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
       <div class="hero__content">
-        <div class="hero__text">
-          <div class="hero__chips">
-            <span>Computer Vision</span>
-            <span>LLMs &amp; NLP</span>
-            <span>Deep Learning</span>
-            <span>ETL Systems</span>
-          </div>
+        <div class="hero__intro">
+          <p class="hero__overline">
+            Computer Vision · LLMs &amp; NLP · Deep Learning · ETL Systems
+          </p>
           <h1>
-            I’m <span>Prajwal Ganugula</span>. I build rigorous vision and language systems
-            that ship reliably at scale.
+            Prajwal Ganugula builds vision and language systems that ship with
+            research-grade rigor.
           </h1>
           <p class="hero__summary">
-            Graduate student at Arizona State University, previously building diffusion and
-            LLM systems at OPLUS. My work centers on computer vision, multimodal learning,
-            NLP, and production-grade data pipelines that keep models grounded and fast.
+            Graduate student at Arizona State University, previously building
+            diffusion and LLM systems at OPLUS. I specialize in computer vision,
+            multimodal learning, and production data pipelines that keep models
+            grounded, fast, and reliable.
           </p>
           <div class="hero__actions">
-            <a class="btn" href="#projects">See Selected Work</a>
-            <a class="btn btn--ghost" href="#downloads">View Resumes</a>
+            <a class="btn" href="#projects">View Selected Work</a>
+            <a class="btn btn--ghost" href="#resume">Download Resume</a>
           </div>
           <ul class="hero__meta">
             <li><span>Tempe, Arizona</span></li>
             <li><a href="tel:+14809423759">+1 480 942 3759</a></li>
             <li><a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a></li>
             <li>
-              <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer"
-                >linkedin.com/in/prajwal-ganugula</a
-              >
+              <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer">
+                linkedin.com/in/prajwal-ganugula
+              </a>
             </li>
           </ul>
         </div>
-        <div class="hero__highlight">
-          <div class="hero__stat">
-            <span class="hero__stat-number">8×</span>
-            <span class="hero__stat-label">diffusion speed-up with KD</span>
+        <aside class="hero__panel">
+          <div class="panel__section">
+            <h2>Current Focus</h2>
+            <ul>
+              <li>Vision-language pipelines for on-device and scalable inference.</li>
+              <li>Evaluation-first LLM systems with grounded retrieval.</li>
+              <li>ETL automation that keeps data quality and latency in check.</li>
+            </ul>
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-number">70%</span>
-            <span class="hero__stat-label">manual toil cut via IaC &amp; CI/CD</span>
+          <div class="panel__metrics">
+            <div>
+              <span class="metric__value">8×</span>
+              <span class="metric__label">Diffusion speed-up with distillation</span>
+            </div>
+            <div>
+              <span class="metric__value">70%</span>
+              <span class="metric__label">Manual toil cut via IaC &amp; CI/CD</span>
+            </div>
+            <div>
+              <span class="metric__value">2</span>
+              <span class="metric__label">Peer-reviewed publications</span>
+            </div>
           </div>
-          <div class="hero__stat">
-            <span class="hero__stat-number">3rd</span>
-            <span class="hero__stat-label">Global SES Code Jam · OPPO HQ</span>
-          </div>
-          <div class="hero__stat">
-            <span class="hero__stat-number">2</span>
-            <span class="hero__stat-label">peer-reviewed publications</span>
-          </div>
-        </div>
+        </aside>
       </div>
     </header>
 
     <main>
-      <section id="focus" class="section section--alt tracks">
+      <section id="focus" class="section section--grid">
         <div class="section__heading">
           <h2>Focus Areas</h2>
-          <p>
-            Two lenses that define my work: visual intelligence and language-driven systems
-            grounded in robust data engineering.
-          </p>
+          <p>Formal, production-minded work across vision, language, and data systems.</p>
         </div>
-        <div class="tracks__controls" role="tablist" aria-label="Career focus selector">
-          <button class="track-btn is-active" data-track="vision" role="tab" aria-selected="true">
-            Computer Vision &amp; Multimodal
-          </button>
-          <button class="track-btn" data-track="llm" role="tab" aria-selected="false">
-            LLMs, NLP &amp; Data Systems
-          </button>
-        </div>
-        <div class="tracks__cards">
-          <article class="tracks__card">
+        <div class="focus-grid">
+          <article class="focus-card">
             <h3>Computer Vision &amp; Multimodal</h3>
             <p>
-              Vision-language pipelines, diffusion distillation, and efficient inference
-              built for product-grade deployment.
+              Diffusion distillation, segmentation, and vision-language systems tuned
+              for controllable outputs.
             </p>
             <ul>
-              <li>Diffusion acceleration, segmentation, and controllable synthesis</li>
-              <li>GPU-aware optimization with PyTorch, ONNX, TensorRT</li>
-              <li>Multimodal evaluation with data-centric validation loops</li>
+              <li>On-device inference optimization for mobile hardware.</li>
+              <li>CLIP-guided segmentation and stylization pipelines.</li>
             </ul>
           </article>
-          <article class="tracks__card">
-            <h3>LLMs, NLP &amp; Data Systems</h3>
+          <article class="focus-card">
+            <h3>LLMs &amp; NLP</h3>
             <p>
-              Retrieval pipelines, LLM ops, and ETL systems that keep language models accurate
-              and dependable.
+              Retrieval-augmented pipelines with rigorous evaluation and safety checks.
             </p>
             <ul>
-              <li>Hybrid retrieval, reranking, and structured prompting</li>
-              <li>ETL orchestration with observability and data contracts</li>
-              <li>Model serving, latency budgets, and evaluation automation</li>
+              <li>Hybrid retrieval with reranking and structured prompting.</li>
+              <li>LLM evaluation for faithfulness, relevance, and completeness.</li>
+            </ul>
+          </article>
+          <article class="focus-card">
+            <h3>Deep Learning Systems</h3>
+            <p>
+              Efficient training, compression, and inference across GPU and edge stacks.
+            </p>
+            <ul>
+              <li>Quantization, pruning, and performance benchmarking.</li>
+              <li>TensorRT, ONNX, and memory-aware optimization.</li>
+            </ul>
+          </article>
+          <article class="focus-card">
+            <h3>ETL &amp; Data Engineering</h3>
+            <p>
+              Reliable pipelines for ingestion, observability, and data contract enforcement.
+            </p>
+            <ul>
+              <li>Airflow, Kafka, and schema validation workflows.</li>
+              <li>Latency monitoring and automated remediation.</li>
             </ul>
           </article>
         </div>
@@ -137,12 +147,9 @@
       <section id="experience" class="section">
         <div class="section__heading">
           <h2>Experience</h2>
-          <p>
-            4+ years shipping applied research and infrastructure in production environments.
-            Switch the focus to see the stories most relevant to you.
-          </p>
+          <p>Applied research and production engineering in high-impact environments.</p>
         </div>
-        <div class="timeline" data-track-content="vision">
+        <div class="timeline">
           <article class="timeline__item">
             <header>
               <h3>Software Engineer · Deep Learning Research</h3>
@@ -151,20 +158,37 @@
             </header>
             <ul>
               <li>
-                Designed lightweight LLM chatbots for mobile, cutting inference latency while
-                adding multilingual understanding for user insights.
+                Designed lightweight LLM chatbots for mobile, cutting inference latency
+                while adding multilingual understanding for user insights.
               </li>
               <li>
-                Distilled Stable Diffusion with step-aware training, shrinking UNet by 50% and
-                delivering 8× faster synthesis on-device.
+                Distilled Stable Diffusion with step-aware training, shrinking UNet by 50%
+                and delivering 8× faster synthesis on-device.
               </li>
               <li>
-                Automated training and benchmarking with PyTorch, ONNX, TensorRT, Docker, and
-                Bash for repeatable performance wins.
+                Automated training and benchmarking with PyTorch, ONNX, TensorRT, Docker,
+                and Bash for repeatable performance wins.
+              </li>
+            </ul>
+          </article>
+          <article class="timeline__item">
+            <header>
+              <h3>Software Engineer · Infrastructure Team</h3>
+              <span>ASU Decision Theater Network · Tempe, AZ</span>
+              <time>Dec 2024 – Present</time>
+            </header>
+            <ul>
+              <li>
+                Engineered orchestration scripts and observability tooling that streamline
+                ETL analytics across AWS and on-prem clusters.
               </li>
               <li>
-                Led SES Code Jam team to global 3rd place; honored as Best On-the-Job Trainer
-                for mentorship and delivery.
+                Built RESTful services with FastAPI and PostgreSQL for internal dashboards,
+                improving data access latency by 30%.
+              </li>
+              <li>
+                Reduced manual build effort by 70% through GitHub Actions and Docker-based
+                deployments.
               </li>
             </ul>
           </article>
@@ -186,74 +210,43 @@
             </ul>
           </article>
         </div>
-
-        <div class="timeline is-hidden" data-track-content="llm">
-          <article class="timeline__item">
-            <header>
-              <h3>Software Engineer · Infrastructure Team</h3>
-              <span>ASU Decision Theater Network · Tempe, AZ</span>
-              <time>Dec 2024 – Present</time>
-            </header>
-            <ul>
-              <li>
-                Engineered orchestration scripts and observability tooling that streamline ETL
-                analytics across AWS and on-prem clusters.
-              </li>
-              <li>
-                Built RESTful services with FastAPI and PostgreSQL for internal dashboards,
-                improving data access latency by 30%.
-              </li>
-              <li>
-                Provisioned IaC via Terraform across EC2, RDS, and S3 while enforcing security
-                guardrails and cost visibility.
-              </li>
-              <li>
-                Reduced manual build effort by 70% through GitHub Actions and Docker-based
-                multi-environment deployments.
-              </li>
-            </ul>
-          </article>
-          <article class="timeline__item">
-            <header>
-              <h3>Software Engineer · Automation &amp; Infrastructure</h3>
-              <span>OPLUS (OPPO · OnePlus) R&amp;D · Hyderabad, India</span>
-              <time>Jun 2022 – Aug 2024</time>
-            </header>
-            <ul>
-              <li>
-                Automated Android validation suite setup via Poco UI Automator, reducing
-                pre-check effort from 20 engineers to 2 with 87% fewer test failures.
-              </li>
-              <li>
-                Developed regression analytics aggregating CI logs and Git metadata to surface
-                flaky tests and accelerate firmware fixes.
-              </li>
-              <li>
-                Built REST-based bug traceability workflows integrating GitLab and Jira to cut
-                reproduction cycles by 60%.
-              </li>
-              <li>
-                Delivered self-service tooling for image flashing and centralized log ingestion
-                into Grafana dashboards.
-              </li>
-            </ul>
-          </article>
-        </div>
       </section>
 
-      <section id="projects" class="section section--alt">
+      <section id="projects" class="section section--grid">
         <div class="section__heading">
           <h2>Selected Projects</h2>
-          <p>
-            Strategic projects that reflect each focus area. Use the toggle above to switch
-            context.
-          </p>
+          <p>Representative work across computer vision, LLM systems, and ETL engineering.</p>
         </div>
-
-        <div class="cards" data-track-content="vision">
+        <div class="cards">
           <article class="card">
             <header>
-              <h3>Structured Image Captioning using Multimodal LLMs</h3>
+              <h3>AI Eraser for Mobile Photos</h3>
+              <span>OPLUS · 2023</span>
+            </header>
+            <p>
+              Built an on-device object removal pipeline with Edge-SAM selection and
+              diffusion-based inpainting optimized for mobile latency budgets.
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=O0cHGDrPNTA" target="_blank" rel="noreferrer">
+                  Product demo video ↗
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.oppo.com/en/newsroom/stories/perfect-your-photos-with-ai-eraser/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  OPPO blog feature ↗
+                </a>
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <header>
+              <h3>Structured Image Captioning with Distributed Training</h3>
               <span>Mar 2024 – Present</span>
             </header>
             <p>
@@ -261,11 +254,8 @@
               DPO-RLHF to deliver schema-aware captions for enterprise pipelines.
             </p>
             <ul>
-              <li>Generated templated, structured datasets for controllable captioning.</li>
-              <li>
-                Scaled PEFT training with DeepSpeed ZeRO-3 and FSDP to minimize GPU memory and
-                cost.
-              </li>
+              <li>Generated templated datasets for controllable captioning.</li>
+              <li>Scaled PEFT training with DeepSpeed ZeRO-3 and FSDP.</li>
             </ul>
           </article>
           <article class="card">
@@ -278,110 +268,25 @@
               quantized BGE reranker to deliver precise answers on tight SLAs.
             </p>
             <ul>
-              <li>
-                Deployed ONNX-accelerated reranker through FastAPI, orchestrated by Docker and
-                GitHub Actions.
-              </li>
+              <li>Deployed ONNX-accelerated reranker through FastAPI and Docker.</li>
               <li>Improved answer precision by 22% while maintaining latency budgets.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <header>
-              <h3>AI Eraser for Mobile Photos</h3>
-              <span>OPLUS · 2023</span>
-            </header>
-            <p>
-              Built an on-device object removal pipeline with Edge-SAM selection and
-              diffusion-based inpainting optimized for mobile latency budgets.
-            </p>
-            <ul>
-              <li>
-                <a href="https://www.youtube.com/watch?v=O0cHGDrPNTA" target="_blank" rel="noreferrer"
-                  >Product demo video ↗</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://www.oppo.com/en/newsroom/stories/perfect-your-photos-with-ai-eraser/"
-                  target="_blank"
-                  rel="noreferrer"
-                  >OPPO blog feature ↗</a
-                >
-              </li>
-            </ul>
-          </article>
-          <article class="card">
-            <header>
-              <h3>MOSAIC: Text-Guided Stylization Control</h3>
-              <span>ICCV Workshops 2023</span>
-            </header>
-            <p>
-              First method to perform text-driven object-wise stylization using CLIP-guided
-              segmentation and diffusion, enabling controllable artistry.
-            </p>
-            <ul>
-              <li>Co-authored peer-reviewed publication accepted at ICCV 2023 Workshops.</li>
-              <li>
-                Demonstrated qualitative and quantitative gains in targeted stylization control.
-              </li>
-            </ul>
-          </article>
-        </div>
-
-        <div class="cards is-hidden" data-track-content="llm">
-          <article class="card">
-            <header>
-              <h3>Efficient Retrieval-Augmented Generation Pipeline</h3>
-              <span>Nov 2023 – Feb 2024</span>
-            </header>
-            <p>
-              Built a full-stack RAG platform combining FAISS + ColBERT retrieval with a
-              quantized reranker to deliver precise answers on tight SLAs.
-            </p>
-            <ul>
-              <li>
-                Deployed ONNX-accelerated reranker through FastAPI, orchestrated by Docker and
-                GitHub Actions.
-              </li>
-              <li>Improved answer precision by 22% while maintaining latency budgets.</li>
-            </ul>
-          </article>
-          <article class="card">
-            <header>
-              <h3>ETL &amp; Observability Automation</h3>
-              <span>2024 – Present</span>
-            </header>
-            <p>
-              Streamlined data ingestion, validation, and monitoring across cloud and on-prem
-              sources to keep downstream analytics reliable.
-            </p>
-            <ul>
-              <li>
-                Built orchestration scripts with standardized schemas, alerts, and runbooks.
-              </li>
-              <li>
-                Reduced manual triage by instrumenting pipeline health metrics and SLAs.
-              </li>
             </ul>
           </article>
         </div>
       </section>
 
-      <section id="research" class="section research">
+      <section id="research" class="section">
         <div class="section__heading">
           <h2>Research &amp; Publications</h2>
-          <p>
-            Blending computer vision research with practical deployment.
-            Explore select figures from MOSAIC and other published work.
-          </p>
+          <p>Selected publications and visual artifacts from MOSAIC and related work.</p>
         </div>
-        <div class="research__highlight">
+        <div class="research">
           <div class="research__summary">
             <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
             <p>
               Proceedings of ICCV Workshops, 2023. Introduced the first text-guided,
-              object-wise stylization method leveraging CLIP, segmentation transformers, and
-              diffusion for granular artistic control.
+              object-wise stylization method leveraging CLIP, segmentation transformers,
+              and diffusion for granular artistic control.
             </p>
             <ul>
               <li>
@@ -389,13 +294,14 @@
                   href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Ganugula_MOSAIC_Multi-Object_Segmented_Arbitrary_Stylization_Using_CLIP_ICCVW_2023_paper.pdf"
                   target="_blank"
                   rel="noreferrer"
-                  >Read the paper ↗</a
                 >
+                  Read the paper ↗
+                </a>
               </li>
               <li>
-                <a href="https://arxiv.org/abs/2309.13716" target="_blank" rel="noreferrer"
-                  >arXiv preprint ↗</a
-                >
+                <a href="https://arxiv.org/abs/2309.13716" target="_blank" rel="noreferrer">
+                  arXiv preprint ↗
+                </a>
               </li>
             </ul>
           </div>
@@ -437,30 +343,10 @@
         </div>
       </section>
 
-      <section id="education" class="section section--alt">
-        <div class="section__heading">
-          <h2>Education</h2>
-        </div>
-        <div class="education">
-          <article>
-            <h3>Arizona State University</h3>
-            <p>Master of Science in Computer Science</p>
-            <span>Aug 2024 – May 2026 · Tempe, AZ</span>
-          </article>
-          <article>
-            <h3>Indian Institute of Technology, Hyderabad</h3>
-            <p>B.Tech in Computer Science and Engineering</p>
-            <span>Jul 2018 – May 2022 · Hyderabad, IN</span>
-          </article>
-        </div>
-      </section>
-
-      <section id="skills" class="section">
+      <section id="skills" class="section section--grid">
         <div class="section__heading">
           <h2>Technical Stack</h2>
-          <p>
-            Core tools across vision, language, and data systems engineering.
-          </p>
+          <p>Core tools across vision, language, and production data systems.</p>
         </div>
         <div class="skills">
           <div class="skill-group">
@@ -527,58 +413,57 @@
         </div>
       </section>
 
-      <section id="downloads" class="section section--alt downloads">
+      <section id="resume" class="section">
         <div class="section__heading">
-          <h2>Resumes &amp; Artifacts</h2>
-          <p>Curated resumes for vision-focused and AI/ML-focused roles.</p>
+          <h2>Resume</h2>
+          <p>AI/ML resume focused on computer vision, LLMs, and data systems work.</p>
         </div>
-        <div class="downloads__grid">
-          <article class="downloads__card">
-            <h3>Computer Vision Resume</h3>
-            <p>Highlights vision, diffusion, and on-device inference work.</p>
-            <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
-              Download PDF (add file)
-            </a>
-            <p class="downloads__hint">
-              Place the file at <code>assets/docs/prajwal-ganugula-computer-vision-resume.pdf</code>
-              and update the link.
+        <div class="resume-card">
+          <div>
+            <h3>AI/ML Resume</h3>
+            <p>
+              Focused on LLMs, NLP, computer vision, and applied data systems engineering.
             </p>
-          </article>
-          <article class="downloads__card">
-            <h3>AI/ML &amp; NLP Resume</h3>
-            <p>Focused on LLMs, NLP, and applied data systems.</p>
-            <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
-              Download PDF (add file)
+          </div>
+          <div class="resume-card__actions">
+            <a class="btn" href="assets/docs/prajwal-ganugula-ai-ml-resume.pdf">
+              Download PDF
             </a>
-            <p class="downloads__hint">
-              Place the file at <code>assets/docs/prajwal-ganugula-ai-ml-resume.pdf</code> and
-              update the link.
+            <p class="resume-card__hint">
+              Add the PDF at <code>assets/docs/prajwal-ganugula-ai-ml-resume.pdf</code>.
             </p>
-          </article>
+          </div>
         </div>
       </section>
 
-      <section id="contact" class="section contact">
+      <section id="contact" class="section section--grid contact">
         <div class="section__heading">
-          <h2>Let’s Build Something</h2>
-          <p>
-            Open to research collaborations and engineering roles spanning vision, LLMs, and
-            production data systems.
-          </p>
+          <h2>Contact</h2>
+          <p>Open to research collaborations and engineering roles across AI systems.</p>
         </div>
         <div class="contact__grid">
-          <div>
+          <div class="contact__links">
             <a class="contact__link" href="mailto:pganugul@asu.edu">pganugul@asu.edu</a>
-            <a class="contact__link" href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer"
-              >LinkedIn</a
+            <a
+              class="contact__link"
+              href="https://linkedin.com/in/prajwal-ganugula"
+              target="_blank"
+              rel="noreferrer"
             >
-            <a class="contact__link" href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer"
-              >GitHub</a
+              LinkedIn
+            </a>
+            <a
+              class="contact__link"
+              href="https://github.com/prajwalganugula"
+              target="_blank"
+              rel="noreferrer"
             >
+              GitHub
+            </a>
           </div>
           <div class="contact__cta">
             <p>
-              Prefer a structured intro? Send a short brief with team goals and I’ll reply
+              Prefer a structured intro? Send a brief with team goals and I will respond
               with tailored case studies.
             </p>
             <a class="btn btn--ghost" href="mailto:pganugul@asu.edu?subject=Let%E2%80%99s%20collaborate">
@@ -590,7 +475,7 @@
     </main>
 
     <footer class="footer">
-      <p>© <span id="year"></span> Prajwal Ganugula. Built with curiosity and care.</p>
+      <p>© <span id="year"></span> Prajwal Ganugula. Built with clarity and care.</p>
       <a class="footer__top" href="#top">Back to top ↑</a>
     </footer>
 
