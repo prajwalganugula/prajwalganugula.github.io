@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prajwal Ganugula | AI Systems & Platform Engineer</title>
+    <title>Prajwal Ganugula | Computer Vision, LLMs, and AI Systems</title>
     <meta
       name="description"
-      content="Portfolio of Prajwal Ganugula — ASU graduate student and engineer building multimodal AI systems and resilient infrastructure platforms."
+      content="Portfolio of Prajwal Ganugula — ASU graduate student focused on computer vision, LLMs, NLP, deep learning, and data systems engineering."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -39,19 +39,19 @@
       <div class="hero__content">
         <div class="hero__text">
           <div class="hero__chips">
-            <span>Multimodal AI</span>
-            <span>Platform Engineering</span>
-            <span>MLOps</span>
+            <span>Computer Vision</span>
+            <span>LLMs &amp; NLP</span>
+            <span>Deep Learning</span>
+            <span>ETL Systems</span>
           </div>
           <h1>
-            I’m <span>Prajwal Ganugula</span>. I turn research-grade models into reliable
-            products and the infrastructure that powers them.
+            I’m <span>Prajwal Ganugula</span>. I build rigorous vision and language systems
+            that ship reliably at scale.
           </h1>
           <p class="hero__summary">
-            Graduate student at Arizona State University, previously building LLM and
-            diffusion systems at OPLUS and modernizing automation infrastructure at
-            scale. My work blends multimodal deep learning, low-latency deployment, and
-            cloud-first platform design.
+            Graduate student at Arizona State University, previously building diffusion and
+            LLM systems at OPLUS. My work centers on computer vision, multimodal learning,
+            NLP, and production-grade data pipelines that keep models grounded and fast.
           </p>
           <div class="hero__actions">
             <a class="btn" href="#projects">See Selected Work</a>
@@ -94,41 +94,41 @@
         <div class="section__heading">
           <h2>Focus Areas</h2>
           <p>
-            Toggle between the lenses I bring to teams. The controls also shape the
-            experience and project sections below.
+            Two lenses that define my work: visual intelligence and language-driven systems
+            grounded in robust data engineering.
           </p>
         </div>
         <div class="tracks__controls" role="tablist" aria-label="Career focus selector">
-          <button class="track-btn is-active" data-track="ai" role="tab" aria-selected="true">
-            AI Systems &amp; Research
+          <button class="track-btn is-active" data-track="vision" role="tab" aria-selected="true">
+            Computer Vision &amp; Multimodal
           </button>
-          <button class="track-btn" data-track="platform" role="tab" aria-selected="false">
-            Platform &amp; Infrastructure
+          <button class="track-btn" data-track="llm" role="tab" aria-selected="false">
+            LLMs, NLP &amp; Data Systems
           </button>
         </div>
         <div class="tracks__cards">
           <article class="tracks__card">
-            <h3>AI Systems &amp; Research</h3>
+            <h3>Computer Vision &amp; Multimodal</h3>
             <p>
-              Multimodal LLMs, diffusion distillation, RAG pipelines, and evaluation
-              workflows anchored in reproducible ML science.
+              Vision-language pipelines, diffusion distillation, and efficient inference
+              built for product-grade deployment.
             </p>
             <ul>
-              <li>QLoRA, PEFT, and instruction alignment for production models</li>
-              <li>Efficient benchmarking with PyTorch, ONNX, TensorRT, DeepSpeed</li>
-              <li>Dataset engines and data-centric evaluation for grounded outputs</li>
+              <li>Diffusion acceleration, segmentation, and controllable synthesis</li>
+              <li>GPU-aware optimization with PyTorch, ONNX, TensorRT</li>
+              <li>Multimodal evaluation with data-centric validation loops</li>
             </ul>
           </article>
           <article class="tracks__card">
-            <h3>Platform &amp; Infrastructure</h3>
+            <h3>LLMs, NLP &amp; Data Systems</h3>
             <p>
-              Automating reliability across CI/CD, observability, and IaC so ML and
-              product teams can scale with confidence.
+              Retrieval pipelines, LLM ops, and ETL systems that keep language models accurate
+              and dependable.
             </p>
             <ul>
-              <li>Terraform, AWS, and container-native deployment flows</li>
-              <li>Resilient job schedulers, caching layers, and telemetry pipelines</li>
-              <li>Incident tooling, chaos testing, and feedback loops to shorten MTTR</li>
+              <li>Hybrid retrieval, reranking, and structured prompting</li>
+              <li>ETL orchestration with observability and data contracts</li>
+              <li>Model serving, latency budgets, and evaluation automation</li>
             </ul>
           </article>
         </div>
@@ -142,7 +142,7 @@
             Switch the focus to see the stories most relevant to you.
           </p>
         </div>
-        <div class="timeline" data-track-content="ai">
+        <div class="timeline" data-track-content="vision">
           <article class="timeline__item">
             <header>
               <h3>Software Engineer · Deep Learning Research</h3>
@@ -187,7 +187,7 @@
           </article>
         </div>
 
-        <div class="timeline is-hidden" data-track-content="platform">
+        <div class="timeline is-hidden" data-track-content="llm">
           <article class="timeline__item">
             <header>
               <h3>Software Engineer · Infrastructure Team</h3>
@@ -250,7 +250,7 @@
           </p>
         </div>
 
-        <div class="cards" data-track-content="ai">
+        <div class="cards" data-track-content="vision">
           <article class="card">
             <header>
               <h3>Structured Image Captioning using Multimodal LLMs</h3>
@@ -287,6 +287,31 @@
           </article>
           <article class="card">
             <header>
+              <h3>AI Eraser for Mobile Photos</h3>
+              <span>OPLUS · 2023</span>
+            </header>
+            <p>
+              Built an on-device object removal pipeline with Edge-SAM selection and
+              diffusion-based inpainting optimized for mobile latency budgets.
+            </p>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=O0cHGDrPNTA" target="_blank" rel="noreferrer"
+                  >Product demo video ↗</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://www.oppo.com/en/newsroom/stories/perfect-your-photos-with-ai-eraser/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >OPPO blog feature ↗</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="card">
+            <header>
               <h3>MOSAIC: Text-Guided Stylization Control</h3>
               <span>ICCV Workshops 2023</span>
             </header>
@@ -303,41 +328,39 @@
           </article>
         </div>
 
-        <div class="cards is-hidden" data-track-content="platform">
+        <div class="cards is-hidden" data-track-content="llm">
           <article class="card">
             <header>
-              <h3>Distributed Cache-Coordinated CI Scheduler</h3>
-              <span>Oct 2024 – Dec 2024</span>
+              <h3>Efficient Retrieval-Augmented Generation Pipeline</h3>
+              <span>Nov 2023 – Feb 2024</span>
             </header>
             <p>
-              Designed a Redis-backed scheduler to deduplicate builds, optimize runner
-              utilization, and coordinate Docker layer caching across fleets.
+              Built a full-stack RAG platform combining FAISS + ColBERT retrieval with a
+              quantized reranker to deliver precise answers on tight SLAs.
             </p>
             <ul>
-              <li>Improved pipeline throughput by 42% through cache fingerprinting.</li>
               <li>
-                Integrated pub/sub signals with GitHub Actions for coherent cache invalidation
-                across ephemeral agents.
+                Deployed ONNX-accelerated reranker through FastAPI, orchestrated by Docker and
+                GitHub Actions.
               </li>
+              <li>Improved answer precision by 22% while maintaining latency budgets.</li>
             </ul>
           </article>
           <article class="card">
             <header>
-              <h3>Network Fault Injection &amp; Auto-Recovery Simulator</h3>
-              <span>Aug 2023 – Sep 2023</span>
+              <h3>ETL &amp; Observability Automation</h3>
+              <span>2024 – Present</span>
             </header>
             <p>
-              Created a programmable chaos framework leveraging iptables, `tc`, and shell
-              automation to stress-test microservice resilience.
+              Streamlined data ingestion, validation, and monitoring across cloud and on-prem
+              sources to keep downstream analytics reliable.
             </p>
             <ul>
               <li>
-                Mapped service tolerance thresholds with Consul discovery and generated recovery
-                playbooks.
+                Built orchestration scripts with standardized schemas, alerts, and runbooks.
               </li>
               <li>
-                Validated auto-healing paths across Docker networks to harden load balancer and
-                service mesh failovers.
+                Reduced manual triage by instrumenting pipeline health metrics and SLAs.
               </li>
             </ul>
           </article>
@@ -436,8 +459,7 @@
         <div class="section__heading">
           <h2>Technical Stack</h2>
           <p>
-            Tools I rely on to bridge the gap between experimentation and resilient
-            deployment.
+            Core tools across vision, language, and data systems engineering.
           </p>
         </div>
         <div class="skills">
@@ -452,37 +474,36 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>AI &amp; Data</h3>
+            <h3>Vision &amp; Multimodal</h3>
             <ul>
               <li>PyTorch</li>
               <li>TensorFlow</li>
               <li>Diffusers</li>
-              <li>LangChain</li>
-              <li>LangGraph</li>
-              <li>DeepSpeed</li>
+              <li>Segmentation</li>
+              <li>TensorRT</li>
+              <li>ONNX</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>NLP &amp; LLM Ops</h3>
+            <h3>LLMs &amp; NLP</h3>
             <ul>
               <li>Instruction tuning</li>
               <li>QLoRA</li>
               <li>RAG</li>
-              <li>Prompt engineering</li>
-              <li>Semantic evaluation</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>Evaluation</li>
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Platforms &amp; DevOps</h3>
+            <h3>ETL &amp; Systems</h3>
             <ul>
-              <li>Docker</li>
-              <li>Terraform</li>
-              <li>GitHub Actions</li>
-              <li>TensorRT</li>
-              <li>ONNX</li>
+              <li>Airflow</li>
+              <li>Kafka</li>
               <li>FastAPI</li>
-              <li>AWS</li>
-              <li>Azure</li>
+              <li>Docker</li>
+              <li>Kubernetes</li>
+              <li>GitHub Actions</li>
             </ul>
           </div>
           <div class="skill-group">
@@ -495,12 +516,12 @@
             </ul>
           </div>
           <div class="skill-group">
-            <h3>Collaboration</h3>
+            <h3>Cloud &amp; Ops</h3>
             <ul>
-              <li>Technical communication</li>
-              <li>Leadership</li>
-              <li>Agile delivery</li>
-              <li>Mentorship</li>
+              <li>AWS</li>
+              <li>Azure</li>
+              <li>Observability</li>
+              <li>CI/CD</li>
             </ul>
           </div>
         </div>
@@ -509,29 +530,29 @@
       <section id="downloads" class="section section--alt downloads">
         <div class="section__heading">
           <h2>Resumes &amp; Artifacts</h2>
-          <p>Pick the version that aligns with the roles you’re evaluating.</p>
+          <p>Curated resumes for vision-focused and AI/ML-focused roles.</p>
         </div>
         <div class="downloads__grid">
           <article class="downloads__card">
-            <h3>AI Systems &amp; Research Resume</h3>
-            <p>Highlights multimodal LLM, diffusion, and R&amp;D experience.</p>
+            <h3>Computer Vision Resume</h3>
+            <p>Highlights vision, diffusion, and on-device inference work.</p>
             <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
               Download PDF (add file)
             </a>
             <p class="downloads__hint">
-              Place the file at <code>assets/docs/prajwal-ganugula-ai-resume.pdf</code> and
-              update the link.
+              Place the file at <code>assets/docs/prajwal-ganugula-computer-vision-resume.pdf</code>
+              and update the link.
             </p>
           </article>
           <article class="downloads__card">
-            <h3>Platform &amp; Infrastructure Resume</h3>
-            <p>Focuses on DevOps, automation, and reliability engineering projects.</p>
+            <h3>AI/ML &amp; NLP Resume</h3>
+            <p>Focused on LLMs, NLP, and applied data systems.</p>
             <a class="btn btn--ghost is-disabled" aria-disabled="true" href="#">
               Download PDF (add file)
             </a>
             <p class="downloads__hint">
-              Place the file at <code>assets/docs/prajwal-ganugula-platform-resume.pdf</code>
-              and update the link.
+              Place the file at <code>assets/docs/prajwal-ganugula-ai-ml-resume.pdf</code> and
+              update the link.
             </p>
           </article>
         </div>
@@ -541,8 +562,8 @@
         <div class="section__heading">
           <h2>Let’s Build Something</h2>
           <p>
-            Open to internships, research collaborations, and platform engineering roles that
-            blend ML with large-scale systems.
+            Open to research collaborations and engineering roles spanning vision, LLMs, and
+            production data systems.
           </p>
         </div>
         <div class="contact__grid">
