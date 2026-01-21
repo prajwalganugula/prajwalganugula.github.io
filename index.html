@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Prajwal Ganugula | Software Engineer & AI/ML Systems</title>
+    <title>Prajwal Ganugula | Software Engineer and ML Systems</title>
     <meta
       name="description"
-      content="Portfolio of Prajwal Ganugula — software engineering, ML systems, computer vision, LLM/RAG, and data platforms."
+      content="Portfolio of Prajwal Ganugula - software engineering, ML systems, computer vision, LLM/RAG, and data platforms."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,144 +17,83 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="page-header" id="top">
-      <nav class="nav">
-        <a class="nav__logo" href="#top">PG</a>
-        <button class="nav__toggle" aria-label="Toggle navigation">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-        <ul class="nav__links">
-          <li><a href="#profile">Profile</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#focus">Focus</a></li>
-          <li><a href="#education">Education</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#certificates">Certificates</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <div class="page-header__banner">
-        <h1>Profile</h1>
-        <p>Software engineering, ML systems, and applied research.</p>
-      </div>
-    </header>
-
-    <main>
-      <section id="profile" class="section">
-        <div class="card profile-card">
-          <div class="profile-card__avatar">
-            <img src="assets/img/headshot.jpeg" alt="Prajwal Ganugula headshot" />
-          </div>
-          <div class="profile-card__details">
-            <h2>Prajwal Ganugula</h2>
-            <p class="profile-card__headline">
-              Software Engineer · ML Engineer · Computer Vision · LLMs &amp; RAG · Data Systems
-            </p>
-            <ul class="profile-card__meta">
-              <li><span>Email</span><a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a></li>
-              <li><span>Phone</span><a href="tel:+14809423759">+1 480 942 3759</a></li>
-              <li><span>Location</span><span>Tempe, Arizona</span></li>
-              <li>
-                <span>LinkedIn</span>
-                <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer">
-                  linkedin.com/in/prajwal-ganugula
-                </a>
-              </li>
-              <li>
-                <span>GitHub</span>
-                <a href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer">
-                  github.com/prajwalganugula
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="profile-card__cta">
-            <a class="btn" href="assets/docs/Prajwal_Resume.pdf" download>Download Resume</a>
-            <a class="btn btn--ghost" href="#projects">View Projects</a>
-          </div>
+    <div class="layout">
+      <aside class="sidebar">
+        <div class="sidebar__profile">
+          <img src="assets/img/headshot.jpeg" alt="Prajwal Ganugula headshot" class="sidebar__avatar" />
+          <h1>Prajwal Ganugula</h1>
+          <p>Software Engineer</p>
+          <p class="sidebar__subtitle">ML Engineering, CV, LLM/RAG, Data Systems</p>
         </div>
-      </section>
+        <button class="sidebar__toggle" aria-label="Toggle navigation" aria-expanded="false">Menu</button>
+        <nav class="sidebar__nav">
+          <a href="#about">About</a>
+          <a href="#focus">Focus</a>
+          <a href="#experience">Experience</a>
+          <a href="#education">Education</a>
+          <a href="#projects">Projects</a>
+          <a href="#research">Research</a>
+          <a href="#skills">Skills</a>
+          <a href="#certificates">Certificates</a>
+          <a href="#awards">Awards</a>
+          <a href="#resume">Resume</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="sidebar__links">
+          <a href="mailto:pganugul@asu.edu">Email</a>
+          <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="assets/docs/Prajwal_Resume.pdf" download>Resume PDF</a>
+        </div>
+      </aside>
 
-      <section id="about" class="section">
-        <div class="section__header">
+      <main class="content">
+        <section id="about" class="section">
           <h2>About</h2>
-        </div>
-        <div class="card">
-          <p>
-            I am an engineer focused on building dependable software and ML systems end to end.
-            My work spans backend services, data pipelines, and applied ML, including computer
-            vision and LLM/RAG systems. I have shipped production systems in Python, C++, and
-            Java, optimized models for edge devices, and published research at ICCV. I enjoy
-            translating research into products through clean system design, rigorous evaluation,
-            and performance discipline.
-          </p>
-        </div>
-      </section>
+          <div class="card">
+            <h3 class="intro__name">Prajwal Ganugula</h3>
+            <p class="intro__role">Software Engineer and ML Systems Engineer</p>
+            <p class="intro__meta">Tempe, Arizona | pganugul@asu.edu</p>
+            <p>
+              I build dependable software and ML systems end to end. My work spans backend
+              services, data pipelines, and applied ML, including computer vision and LLM/RAG
+              systems. I have shipped production systems in Python, C++, and Java, optimized
+              models for edge devices, and published research at ICCV. I focus on clean system
+              design, rigorous evaluation, and reliable delivery.
+            </p>
+            <div class="intro__actions">
+              <a class="btn" href="assets/docs/Prajwal_Resume.pdf" download>Download Resume</a>
+              <a class="btn btn--ghost" href="#projects">View Projects</a>
+            </div>
+          </div>
+        </section>
 
-      <section id="focus" class="section">
-        <div class="section__header">
+        <section id="focus" class="section">
           <h2>Focus Areas</h2>
-        </div>
-        <div class="card">
-          <div class="tag-list">
-            <span class="tag">Software Engineering</span>
-            <span class="tag">Machine Learning Engineering</span>
-            <span class="tag">Computer Vision</span>
-            <span class="tag">LLMs &amp; RAG</span>
-            <span class="tag">Data Engineering</span>
-            <span class="tag">Platforms &amp; MLOps</span>
-          </div>
-        </div>
-      </section>
-
-      <section id="education" class="section">
-        <div class="section__header">
-          <h2>Education</h2>
-        </div>
-        <div class="card card--list">
-          <div class="entry">
-            <div class="entry__icon">MS</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Arizona State University</h3>
-                <span class="entry__date">Aug 2024 – May 2026</span>
-              </div>
-              <p class="entry__subtitle">M.S. in Computer Science · GPA 4.0/4.0</p>
+          <div class="card">
+            <div class="tag-list">
+              <span>Software Engineering</span>
+              <span>Machine Learning Engineering</span>
+              <span>Computer Vision</span>
+              <span>LLMs and RAG</span>
+              <span>Data Engineering</span>
+              <span>Platforms and MLOps</span>
             </div>
           </div>
-          <div class="entry">
-            <div class="entry__icon">BS</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Indian Institute of Technology, Hyderabad</h3>
-                <span class="entry__date">Jul 2018 – May 2022</span>
-              </div>
-              <p class="entry__subtitle">B.Tech in Computer Science and Engineering · GPA 8.5/10</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="experience" class="section">
-        <div class="section__header">
+        <section id="experience" class="section">
           <h2>Experience</h2>
-        </div>
-        <div class="card card--list">
-          <div class="entry">
-            <div class="entry__icon">AI</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>AI Engineer · Data Infrastructure &amp; Platforms</h3>
-                <span class="entry__date">Oct 2025 – Present</span>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>AI Engineer - Data Infrastructure and Platforms</h3>
+                  <p>Everest Global Insurance | Remote, US</p>
+                </div>
+                <span>Oct 2025 - Present</span>
               </div>
-              <p class="entry__subtitle">Everest Global Insurance · Remote, US</p>
-              <ul class="entry__bullets">
+              <ul>
                 <li>
                   Built production RAG-based systems with Kafka and Airflow pipelines serving
                   1,200+ underwriters with monitored data quality.
@@ -163,17 +102,16 @@
                   Designed multi-agent LLM workflows that reduced manual review time by 25%.
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">ML</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Machine Learning Engineer</h3>
-                <span class="entry__date">Dec 2024 – Sep 2025</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Machine Learning Engineer</h3>
+                  <p>ASU Decision Theater | Tempe, AZ</p>
+                </div>
+                <span>Dec 2024 - Sep 2025</span>
               </div>
-              <p class="entry__subtitle">ASU Decision Theater · Tempe, AZ</p>
-              <ul class="entry__bullets">
+              <ul>
                 <li>
                   Built recommendation and ranking models over 100K+ research articles,
                   improving click-through by 23%.
@@ -183,17 +121,16 @@
                   and dashboards for iteration.
                 </li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">SE</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Software Engineer · Deep Learning Research &amp; Innovation</h3>
-                <span class="entry__date">Jun 2022 – Aug 2024</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Software Engineer - Deep Learning Research and Innovation</h3>
+                  <p>OPLUS (OPPO-OnePlus) Research and Development | Hyderabad, India</p>
+                </div>
+                <span>Jun 2022 - Aug 2024</span>
               </div>
-              <p class="entry__subtitle">OPLUS (OPPO · OnePlus) · Hyderabad, India</p>
-              <ul class="entry__bullets">
+              <ul>
                 <li>
                   Optimized LLMs for Edge SoCs using QLoRA and INT8 quantization, achieving
                   sub-100ms on-device chat.
@@ -202,292 +139,222 @@
                   Built the AI eraser pipeline with Edge-SAM selection and diffusion inpainting.
                 </li>
                 <li>
-                  Compressed Stable Diffusion UNet by 50%, delivering 8× faster synthesis.
+                  Compressed Stable Diffusion UNet by 50%, delivering 8x faster synthesis.
                 </li>
               </ul>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="projects" class="section">
-        <div class="section__header">
+        <section id="education" class="section">
+          <h2>Education</h2>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Arizona State University</h3>
+                  <p>M.S. in Computer Science | GPA 4.0/4.0</p>
+                </div>
+                <span>Aug 2024 - May 2026</span>
+              </div>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Indian Institute of Technology, Hyderabad</h3>
+                  <p>B.Tech in Computer Science and Engineering | GPA 8.5/10</p>
+                </div>
+                <span>Jul 2018 - May 2022</span>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="projects" class="section">
           <h2>Projects</h2>
-        </div>
-        <div class="card card--list">
-          <div class="entry">
-            <div class="entry__icon">CV</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>AI Eraser for Mobile Photos</h3>
-                <span class="entry__date">OPLUS · 2023</span>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>AI Eraser for Mobile Photos</h3>
+                  <p>OPLUS | 2023</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                On-device object removal with Edge-SAM selection and diffusion-based inpainting.
-              </p>
-              <ul class="entry__bullets">
-                <li>
-                  <a href="https://www.youtube.com/watch?v=O0cHGDrPNTA" target="_blank" rel="noreferrer">
-                    Product demo video ↗
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.oppo.com/en/newsroom/stories/perfect-your-photos-with-ai-eraser/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    OPPO blog feature ↗
-                  </a>
-                </li>
+              <ul>
+                <li>On-device object removal with Edge-SAM selection and diffusion inpainting.</li>
+                <li><a href="https://www.youtube.com/watch?v=O0cHGDrPNTA" target="_blank" rel="noreferrer">Product demo video</a></li>
+                <li><a href="https://www.oppo.com/en/newsroom/stories/perfect-your-photos-with-ai-eraser/" target="_blank" rel="noreferrer">OPPO blog feature</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">RG</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Multi-Agent RAG Copilot for Cloud Operations</h3>
-                <span class="entry__date">Aug 2024 – Nov 2024</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Multi-Agent RAG Copilot for Cloud Operations</h3>
+                  <p>Personal Project | Aug 2024 - Nov 2024</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                Agentic RAG copilot integrating runbooks, tickets, and live logs for on-call workflows.
-              </p>
-              <ul class="entry__bullets">
+              <ul>
+                <li>Agentic RAG copilot integrating runbooks, tickets, and live logs.</li>
                 <li>Built with LangChain/LangGraph, Python, FastAPI, and Docker.</li>
-                <li>Reduced context switching with guided incident triage.</li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">DL</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Structured Image Captioning with Distributed Training</h3>
-                <span class="entry__date">Mar 2025 – May 2025</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Structured Image Captioning with Distributed Training</h3>
+                  <p>Mar 2025 - May 2025</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                Multimodal pipeline (BLIP-2 + ViT-G) fine-tuned with QLoRA and scaled with DeepSpeed.
-              </p>
-              <ul class="entry__bullets">
-                <li>Optimized memory with attention-efficient training techniques.</li>
-                <li>Scaled training with NCCL-enabled multi-GPU coordination.</li>
+              <ul>
+                <li>BLIP-2 + ViT-G pipeline fine-tuned with QLoRA and scaled with DeepSpeed.</li>
+                <li>Multi-GPU training with NCCL and memory-efficient attention.</li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">FS</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Feature Store &amp; ML Experimentation Platform</h3>
-                <span class="entry__date">Aug 2024 – Nov 2024</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Feature Store and ML Experimentation Platform</h3>
+                  <p>Aug 2024 - Nov 2024</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                Versioned feature store and experiment service for ML A/B testing.
-              </p>
-              <ul class="entry__bullets">
-                <li>Implemented reusable Airflow jobs and a Python client.</li>
-                <li>Enabled consistent online/offline feature definitions.</li>
+              <ul>
+                <li>Versioned feature store with validation checks for online and offline use.</li>
+                <li>Experiment service for ML A/B testing with reusable Airflow jobs.</li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">SD</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Deployment Management Dashboard</h3>
-                <span class="entry__date">Mar 2025 – May 2025</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Deployment Management Dashboard</h3>
+                  <p>Mar 2025 - May 2025</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                React + TypeScript interface backed by APIs to visualize deployment state.
-              </p>
-              <ul class="entry__bullets">
-                <li>Added validation and automated tests to protect rollout workflows.</li>
-                <li>Integrated CI/CD signals to surface status in real time.</li>
+              <ul>
+                <li>React and TypeScript interface backed by APIs to visualize deployments.</li>
+                <li>Validation and automated tests to protect rollout workflows.</li>
               </ul>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="research" class="section">
-        <div class="section__header">
-          <h2>Research &amp; Publications</h2>
-        </div>
-        <div class="card card--list">
-          <div class="entry">
-            <div class="entry__icon">PB</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
-                <span class="entry__date">ICCV Workshops 2023</span>
+        <section id="research" class="section">
+          <h2>Research and Publications</h2>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>MOSAIC: Multi-Object Segmented Arbitrary Stylization Using CLIP</h3>
+                  <p>ICCV Workshops 2023</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                Text-guided stylization using CLIP, segmentation transformers, and diffusion.
-              </p>
-              <ul class="entry__bullets">
+              <ul>
                 <li>
-                  <a
-                    href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Ganugula_MOSAIC_Multi-Object_Segmented_Arbitrary_Stylization_Using_CLIP_ICCVW_2023_paper.pdf"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Read the paper ↗
+                  <a href="https://openaccess.thecvf.com/content/ICCV2023W/NIVT/papers/Ganugula_MOSAIC_Multi-Object_Segmented_Arbitrary_Stylization_Using_CLIP_ICCVW_2023_paper.pdf" target="_blank" rel="noreferrer">
+                    Read the paper
                   </a>
                 </li>
-                <li>
-                  <a href="https://arxiv.org/abs/2309.13716" target="_blank" rel="noreferrer">
-                    arXiv preprint ↗
-                  </a>
-                </li>
+                <li><a href="https://arxiv.org/abs/2309.13716" target="_blank" rel="noreferrer">arXiv preprint</a></li>
               </ul>
-            </div>
-          </div>
-          <div class="entry">
-            <div class="entry__icon">PB</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Application for Produced Crop Price Forecasting Through Deep Learning</h3>
-                <span class="entry__date">IRJMETS · Nov 2023</span>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Application for Produced Crop Price Forecasting Through Deep Learning</h3>
+                  <p>IRJMETS | Nov 2023</p>
+                </div>
               </div>
-              <p class="entry__subtitle">
-                Forecasting pipeline combining classical ML and deep learning for crop pricing trends.
-              </p>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="skills" class="section">
-        <div class="section__header">
+        <section id="skills" class="section">
           <h2>Skills</h2>
-        </div>
-        <div class="card">
-          <div class="skills-grid">
-            <div class="skill-group">
+          <div class="card skills">
+            <div>
               <h3>Languages</h3>
-              <div class="tag-list">
-                <span class="tag">Python</span>
-                <span class="tag">C++</span>
-                <span class="tag">Java</span>
-                <span class="tag">SQL</span>
-                <span class="tag">Bash</span>
-                <span class="tag">JavaScript</span>
-              </div>
+              <p>Python, C++, Java, SQL, Bash, JavaScript</p>
             </div>
-            <div class="skill-group">
-              <h3>ML &amp; CV</h3>
-              <div class="tag-list">
-                <span class="tag">PyTorch</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">Diffusers</span>
-                <span class="tag">TensorRT</span>
-                <span class="tag">ONNX</span>
-                <span class="tag">Segmentation</span>
-              </div>
+            <div>
+              <h3>ML and CV</h3>
+              <p>PyTorch, TensorFlow, Diffusers, TensorRT, ONNX, Segmentation</p>
             </div>
-            <div class="skill-group">
-              <h3>LLMs &amp; RAG</h3>
-              <div class="tag-list">
-                <span class="tag">QLoRA</span>
-                <span class="tag">RAG</span>
-                <span class="tag">LangChain</span>
-                <span class="tag">LangGraph</span>
-                <span class="tag">Evaluation</span>
-              </div>
+            <div>
+              <h3>LLMs and RAG</h3>
+              <p>QLoRA, RAG, LangChain, LangGraph, Evaluation</p>
             </div>
-            <div class="skill-group">
+            <div>
               <h3>Platforms</h3>
-              <div class="tag-list">
-                <span class="tag">FastAPI</span>
-                <span class="tag">REST / gRPC</span>
-                <span class="tag">Docker</span>
-                <span class="tag">Kubernetes</span>
-                <span class="tag">GitHub Actions</span>
-              </div>
+              <p>FastAPI, REST, gRPC, Docker, Kubernetes, GitHub Actions</p>
             </div>
-            <div class="skill-group">
-              <h3>Data &amp; ETL</h3>
-              <div class="tag-list">
-                <span class="tag">Airflow</span>
-                <span class="tag">Kafka</span>
-                <span class="tag">Spark</span>
-                <span class="tag">PostgreSQL</span>
-                <span class="tag">Redshift</span>
-              </div>
+            <div>
+              <h3>Data and ETL</h3>
+              <p>Airflow, Kafka, Spark, PostgreSQL, Redshift</p>
             </div>
-            <div class="skill-group">
+            <div>
               <h3>Cloud</h3>
-              <div class="tag-list">
-                <span class="tag">AWS</span>
-                <span class="tag">Azure</span>
-                <span class="tag">Observability</span>
-                <span class="tag">CI/CD</span>
-              </div>
+              <p>AWS, Azure, Observability, CI/CD</p>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="certificates" class="section">
-        <div class="section__header">
+        <section id="certificates" class="section">
           <h2>Certificates</h2>
-        </div>
-        <div class="card card--list">
-          <div class="entry">
-            <div class="entry__icon">CT</div>
-            <div class="entry__body">
-              <div class="entry__title">
-                <h3>Amazon ML Summer School</h3>
-                <span class="entry__date">Jul 2021</span>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Amazon ML Summer School</h3>
+                  <p>Amazon | Jul 2021</p>
+                </div>
               </div>
-              <p class="entry__subtitle">Certificate of completion.</p>
-              <ul class="entry__bullets">
-                <li>
-                  <a href="assets/docs/Prajwal_Ganugula_Amazon_ML_Summer_School.pdf">
-                    View certificate
-                  </a>
-                </li>
+              <ul>
+                <li><a href="assets/docs/Prajwal_Ganugula_Amazon_ML_Summer_School.pdf">View certificate</a></li>
               </ul>
-            </div>
+            </article>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="resume" class="section">
-        <div class="section__header">
+        <section id="awards" class="section">
+          <h2>Awards</h2>
+          <div class="card list">
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Global SES Code Jam - 3rd Place</h3>
+                  <p>OPLUS (OPPO-OnePlus)</p>
+                </div>
+              </div>
+            </article>
+            <article>
+              <div class="item__header">
+                <div>
+                  <h3>Best On-the-Job Trainer</h3>
+                  <p>OPLUS (OPPO-OnePlus)</p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section id="resume" class="section">
           <h2>Resume</h2>
-        </div>
-        <div class="card resume-card">
-          <div>
-            <h3>Resume</h3>
+          <div class="card resume">
             <p>Single resume spanning software engineering, ML, computer vision, and data systems.</p>
-          </div>
-          <div class="resume-card__cta">
             <a class="btn" href="assets/docs/Prajwal_Resume.pdf" download>Download PDF</a>
-            <p class="resume-card__hint">File: <code>assets/docs/Prajwal_Resume.pdf</code></p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      <section id="contact" class="section">
-        <div class="section__header">
+        <section id="contact" class="section">
           <h2>Contact</h2>
-        </div>
-        <div class="card contact-card">
-          <div>
-            <p><strong>Email:</strong> <a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a></p>
-            <p><strong>Phone:</strong> <a href="tel:+14809423759">+1 480 942 3759</a></p>
-            <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer">linkedin.com/in/prajwal-ganugula</a></p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer">github.com/prajwalganugula</a></p>
+          <div class="card">
+            <p>Email: <a href="mailto:pganugul@asu.edu">pganugul@asu.edu</a></p>
+            <p>Phone: <a href="tel:+14809423759">+1 480 942 3759</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/prajwal-ganugula" target="_blank" rel="noreferrer">linkedin.com/in/prajwal-ganugula</a></p>
+            <p>GitHub: <a href="https://github.com/prajwalganugula" target="_blank" rel="noreferrer">github.com/prajwalganugula</a></p>
           </div>
-        </div>
-      </section>
-    </main>
-
-    <footer class="footer">
-      <p>© <span id="year"></span> Prajwal Ganugula.</p>
-    </footer>
+        </section>
+      </main>
+    </div>
 
     <script src="script.js"></script>
   </body>
